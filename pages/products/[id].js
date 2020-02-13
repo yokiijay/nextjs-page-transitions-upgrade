@@ -15,7 +15,7 @@ import Loading from '../../components/Loading'
 
 const Product = props => {
   const router = useRouter()
-  const URL = `http://my-json-server.typicode.com/wrongakram/demo/products/${router.query.id}/`
+  const URL = `https://my-json-server.typicode.com/wrongakram/demo/products/${router.query.id}/`
   const { data, error } = useSWR(URL, fetcher)
 
   if (error) return <h1>ERROR</h1>

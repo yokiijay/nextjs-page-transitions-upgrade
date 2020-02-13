@@ -14,7 +14,7 @@ import Loading from '../components/Loading'
 
 const Index = props => {
   const { data, error } = useSWR(
-    'http://my-json-server.typicode.com/wrongakram/demo/products/',
+    'https://my-json-server.typicode.com/wrongakram/demo/products/',
     fetcher
   )
 
